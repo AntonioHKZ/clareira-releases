@@ -17,6 +17,10 @@ O Clareira é um app para Android para assistir vídeos sem anúncios. Ele abre 
 5. **Para atualizar:** baixe o APK da versão nova e instale por cima. Sua conta continua conectada.
 6. **Para desinstalar:** segure o ícone do Clareira e toque em **Desinstalar**.
 
+## Encontrou um erro?
+
+Segure o ícone do Clareira e toque em **Relatar erro**. O seu app de e-mail abre com tudo preenchido: é só tocar em **Enviar**. O relatório vai para **clareira.appvid@gmail.com** e traz só informações técnicas do app e do celular, nunca o que você assistiu.
+
 Funciona no Android 8 ou mais novo, em celulares de 64 bits (praticamente todos dos últimos anos).
 
 > Projeto pessoal e independente, sem relação com o YouTube, o Google ou a Mozilla.
