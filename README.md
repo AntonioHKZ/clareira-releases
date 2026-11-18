@@ -21,6 +21,15 @@ O Clareira é um app para Android para assistir vídeos sem anúncios. Ele abre 
 
 Segure o ícone do Clareira e toque em **Relatar erro**. O seu app de e-mail abre com tudo preenchido: é só tocar em **Enviar**. O relatório vai para **clareira.appvid@gmail.com** e traz só informações técnicas do app e do celular, nunca o que você assistiu.
 
+## Sua conta está segura?
+
+Sim. O login é feito **direto na página oficial do Google**, como em qualquer navegador:
+
+- Sua senha vai **direto para o Google**. O Clareira nunca vê nem guarda sua senha.
+- **Não temos acesso a nenhum dado da sua conta**: nem e-mail, nem histórico, nem o que você assiste.
+- O app **não envia nada para nós**. A única exceção é o **Relatar erro**, que só sai do seu celular se você mesmo tocar em Enviar, e traz apenas informações técnicas do app e do celular.
+- Seu login fica salvo só no seu celular, como no navegador.
+
 Funciona no Android 8 ou mais novo, em celulares de 64 bits (praticamente todos dos últimos anos).
 
 > Projeto pessoal e independente, sem relação com o YouTube, o Google ou a Mozilla.
