@@ -1,10 +1,15 @@
 <p align="center">
-  <img src="icone.png" alt="Clareira" width="420">
+  <img src="icone.png" alt="Clareira" width="180">
 </p>
 
-# Clareira
+<h1 align="center">Clareira</h1>
 
-O Clareira é um app para Android para assistir vídeos sem anúncios. Ele abre como um app comum, em tela cheia, e mantém sua conta conectada. Aqui ficam as versões para baixar.
+<p align="center">
+  App para Android para assistir vídeos sem anúncios, com miniplayer, tela cheia e telinha.<br>
+  <a href="https://github.com/AntonioHKZ/clareira-releases/releases/latest"><b>Baixar a última versão</b></a>
+</p>
+
+Ele abre como um app comum, em tela cheia, e mantém sua conta conectada. Aqui ficam as versões para baixar.
 
 **Baixe o `Clareira-<versão>.apk` da [última versão](https://github.com/AntonioHKZ/clareira-releases/releases/latest)** (parte Assets da página), direto pelo celular.
 
@@ -29,6 +34,22 @@ Sim. O login é feito **direto na página oficial do Google**, como em qualquer 
 - **Não temos acesso a nenhum dado da sua conta**: nem e-mail, nem histórico, nem o que você assiste.
 - O app **não envia nada para nós**. A única exceção é o **Relatar erro**, que só sai do seu celular se você mesmo tocar em Enviar, e traz apenas informações técnicas do app e do celular.
 - Seu login fica salvo só no seu celular, como no navegador.
+
+## Como foi feito
+
+O código do Clareira é privado, mas aqui vai um resumo de como ele funciona por dentro:
+
+- **Kotlin, para Android.** O app é nativo, com a interface própria do player: quadrinho que dá para arrastar, tela cheia ao girar o celular, telinha (Picture-in-Picture) e gestos de arrastar para minimizar e para ver mais vídeos.
+- **Motor do Firefox (GeckoView), em vez do WebView do Android.** É o mesmo motor do Firefox para celular, e é ele que permite usar extensões dentro do app.
+- **uBlock Origin** para bloquear os anúncios. Ele é instalado e atualizado sozinho, e o app só abre a primeira página depois que o bloqueador está pronto.
+- **Uma extensão própria** para os detalhes da interface: conversa entre o app e a página, gestos e esconder ofertas pagas.
+
+Alguns desafios do caminho:
+
+- **Fazer o vídeo começar sozinho**, sem anúncio e rápido, ao tocar num vídeo.
+- **Gastar menos bateria e esquentar menos:** o app pede vídeos num formato que o chip do celular decodifica com economia e limita a qualidade ao tamanho da tela.
+- **Quando o Android fecha partes do app para liberar memória**, o vídeo volta sozinho do ponto em que estava.
+- **Privacidade desde o começo:** o app não tem servidor, não coleta nada, e o relatório de erro nunca registra endereços, buscas ou títulos de vídeos.
 
 Funciona no Android 8 ou mais novo, em celulares de 64 bits (praticamente todos dos últimos anos).
 
